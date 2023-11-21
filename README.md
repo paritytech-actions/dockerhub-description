@@ -12,11 +12,11 @@ This is useful if you `docker push` your images to Docker Hub. It provides an ea
 
 ```yml
     - name: Docker Hub Description
-      uses: paritytech-stg/dockerhub-description@v3
+      uses: paritytech-actions/dockerhub-description@v3
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
-        repository: paritytech-stg/dockerhub-description
+        repository: <dockerhub_org>/<dockerhub-repository>
 ```
 
 ### Action inputs
